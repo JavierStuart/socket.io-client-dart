@@ -515,7 +515,7 @@ class _Backoff {
   late num _jitter;
   num attempts = 0;
 
-  _Backoff({min = 100, max = 10000, jitter = 0, factor = 2})
+  _Backoff({min = 100, max = 10000, jitter = 0, factor = 1})
       : _ms = min,
         _max = max,
         _factor = factor {
